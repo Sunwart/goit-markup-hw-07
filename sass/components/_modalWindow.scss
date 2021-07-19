@@ -8,7 +8,7 @@
   opacity: 1;
   transition: opacity 500ms var(--timing-function);
 }
-.test {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -26,10 +26,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
 }
-.backdrop.test .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
 }
-.close {
+.modal__close {
   position: absolute;
   background-color: transparent;
   height: 30px;
@@ -39,12 +39,13 @@
   padding: 0;
   cursor: pointer;
   color: var(--color-contrast);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
 }
-.close-icon {
+.modal__close-icon {
   fill: currentColor;
   transition: color var(--effect-duration) var(--timing-function);
-}
-.close:hover,
-.close:focus {
-  color: var(--color-brand);
 }

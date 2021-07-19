@@ -5,7 +5,41 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-title {
+  color: var(--color-titles);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sm-icon {
+  fill: currentColor;
+  align-self: center;
+
+  &--alignment {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--container {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
 }
