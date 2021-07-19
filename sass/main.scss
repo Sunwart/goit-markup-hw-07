@@ -1,4 +1,8 @@
 @import './utils/variables';
 @import './base/general';
-@import './utils/visually-hidden';
+@import './utils/visuallyHidden';
 @import './components/common';
+@import './components/button';
+
+@import './components/hero';
+@import './components/modalWindow';

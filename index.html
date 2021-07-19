@@ -62,19 +62,12 @@
     <main>
 
       <!-- Hero Section -->
-      <section>
-        <div>
-          <h1>Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="btn">Заказать услугу</button>
+      <section class="hero">
+        <div class="hero--alignment">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
         </div>
       </section>
-
-      <!-- <section class="hero-section">
-        <div class="hero-align">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="btn">Заказать услугу</button>
-        </div>
-      </section> -->
 
       <!-- Advantages -->
       <section class="section">
@@ -578,14 +571,14 @@
     </footer>
 
     <!--          Modal Window          -->
-    <div data-modal>
-      <div>
-        <button data-modal-close>
-          <svg width="30" height="30" aria-label="Закрыть окно">
+    <div data-modal class="backdrop test">
+      <div class="modal">
+        <button data-modal-close class="close">
+          <svg width="30" height="30" aria-label="Закрыть окно" class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form>
+        <!-- <form>
           <div role="group">
             <b>Оставьте свои данные, мы вам перезвоним</b>
             <label for="name">Имя</label>
@@ -642,7 +635,7 @@
             ></label
           >
           <button type="submit">Отправить</button>
-        </form>
+        </form> -->
       </div>
     </div>
 
